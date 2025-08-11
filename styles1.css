@@ -1,0 +1,102 @@
+/* Reset & Theme */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  background: linear-gradient(to right, #ff0000, #ffea00, #00c853);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.upload-section input[type="file"] {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 2px dashed #fff;
+  border-radius: 8px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-weight: bold;
+}
+
+.preview-section {
+  margin: 1rem 0;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.preview-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.compression-controls {
+  margin: 1rem 0;
+  text-align: left;
+  color: #fff;
+}
+
+.compression-controls label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+#qualitySlider {
+  width: 100%;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  background-color: #00c853;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #00b342;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
