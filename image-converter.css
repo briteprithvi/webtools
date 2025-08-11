@@ -1,0 +1,122 @@
+/* Reset & Theme */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  background: linear-gradient(to right, #ff0000, #ffea00, #00c853);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.upload-section input[type="file"] {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: 2px dashed #fff;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-weight: bold;
+}
+
+.dimension-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.dimension-inputs label {
+  flex: 1;
+}
+
+.dimension-inputs input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  margin-top: 0.3rem;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  margin-bottom: 1rem;
+  background-color: #00c853;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #00b342;
+}
+
+.preview-section {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.preview-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+#downloadBtn {
+  display: inline-block;
+  background: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#downloadBtn:hover {
+  background: #d50000;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .dimension-inputs {
+    flex-direction: column;
+  }
+
+  button, #downloadBtn {
+    width: 100%;
+  }
+}
